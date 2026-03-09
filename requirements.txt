@@ -4,3 +4,5 @@ langchain-community
 ollama
 faiss-cpu
 gitpython
+langchain-text-splitters
+langchain-ollama
