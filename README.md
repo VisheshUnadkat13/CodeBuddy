@@ -5,3 +5,36 @@
 <img width="1919" height="1135" alt="Screenshot 2026-03-09 212428" src="https://github.com/user-attachments/assets/09dbb813-2069-4e1b-be63-8ff502db673b" />
 <img width="1919" height="1139" alt="Screenshot 2026-03-09 212627" src="https://github.com/user-attachments/assets/44f776d0-e5c3-4f37-a252-5ba7e38f6008" />
 
+# 🚀 CodeBuddy AI
+
+**CodeBuddy AI** is an intelligent **AI-powered codebase assistant** that allows developers to interact with large code repositories using **natural language queries**.  
+
+It uses **Retrieval-Augmented Generation (RAG)** to analyze source code, retrieve relevant code snippets, and generate contextual responses using a Large Language Model.
+
+The system can help developers **understand unfamiliar codebases, detect bugs, and generate documentation automatically.**
+
+---
+
+# ✨ Features
+
+- 🔍 **Codebase Semantic Search**  
+  Query any repository using natural language.
+
+- 🐞 **AI Bug Detection**  
+  Identify potential issues in the code.
+
+- 📝 **Automatic Code Documentation**  
+  Generate human-readable documentation for code files.
+
+- 🧠 **Context-Aware Code Explanation**  
+  Understand large repositories using RAG-based retrieval.
+
+- ⚡ **Fast Similarity Search**  
+  Uses FAISS vector database for efficient retrieval.
+
+- 🌐 **Interactive UI**  
+  Built with Streamlit for easy interaction.
+
+---
+
+# 🏗 System Architecture
