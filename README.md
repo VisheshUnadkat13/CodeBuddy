@@ -38,3 +38,75 @@ The system can help developers **understand unfamiliar codebases, detect bugs, a
 ---
 
 # 🏗 System Architecture
+
+User Query
+↓
+Streamlit UI
+↓
+Repository Ingestion
+↓
+Code Parsing
+↓
+Code Chunking
+↓
+Embedding Generation
+↓
+FAISS Vector Database
+↓
+Retriever
+↓
+Llama3 (Ollama LLM)
+↓
+AI Response
+
+
+---
+
+# ⚙️ Tech Stack
+
+## Frontend
+- Streamlit
+
+## Backend
+- Python
+
+## AI / LLM
+- LangChain
+- Ollama
+- Llama3
+
+## Embeddings
+- nomic-embed-text
+
+## Vector Database
+- FAISS
+
+## Other Tools
+- GitPython
+- RecursiveCharacterTextSplitter
+
+---
+
+💡 How It Works
+
+User provides a GitHub repository path.
+The system loads and parses all code files.
+Files are split into smaller semantic chunks.
+Each chunk is converted into embeddings.
+Embeddings are stored in a FAISS vector database.
+When a user asks a question:
+Relevant code chunks are retrieved.
+Context is passed to the LLM.
+Llama3 generates the final answer.
+
+🔮 Future Improvements
+
+AST-based code understanding
+AI-generated unit tests
+Pull request code review
+Multi-repository support
+GitHub integration
+Agent-based workflows with LangGraph
+
+👨‍💻 Author
+Vishesh Unadkat
