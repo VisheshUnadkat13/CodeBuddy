@@ -4,13 +4,14 @@ from ingestion.repo_loader import clone_repo
 from ingestion.code_parser import load_code_files
 from ingestion.chunker import chunk_code
 
-from embeddings.ollama_embedder import get_embedding_model
+from embeddings.embedder import get_embedding_model
 from vectorstore.faiss_store import create_vector_store
 from retriever.retriever import get_retriever
 
-from llm.ollama_llm import load_llm
+from llm.groq_llm import load_llm
 from rag.rag_pipeline import run_rag
 
+st.set_page_config(page_title="CodeBuddy AI")
 
 st.title("CodeBuddy AI")
 
@@ -21,7 +22,8 @@ mode = st.selectbox(
     [
         "Chat with Code",
         "Bug Detection",
-        "Generate Documentation"
+        "Generate Documentation",
+        "Open Source Contributor"
     ]
 )
 
@@ -57,7 +59,10 @@ if st.button("Run"):
         st.session_state.llm
     )
 
-    st.write(response)
+    if hasattr(response, 'content'):
+        st.markdown(response.content)
+    else:
+        st.markdown(response)
 
     st.subheader("Sources")
 

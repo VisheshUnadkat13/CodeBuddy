@@ -5,4 +5,9 @@ ollama
 faiss-cpu
 gitpython
 langchain-text-splitters
-langchain-ollama
+# langchain-ollama
+langchain-groq
+sentence-transformers
+langchain_huggingface
+transformers
+python-dotenv
